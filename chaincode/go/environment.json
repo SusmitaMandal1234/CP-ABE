@@ -1,0 +1,6 @@
+{
+"TOPIC":"LC-Transfer",
+"BROKER_ADDRESS":"172.16.85.135:9092",
+"PEER_ID":"peer1.org2.example.com",
+"GROUP_ID":"peer0"
+}

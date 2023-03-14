@@ -1,0 +1,43 @@
+test:
+  name: basic-contract-benchmark
+  description: A test benchmark
+  workers:
+    type: local
+    number: 5
+  rounds:
+    - label: createAsset
+      description: Create asset benchmark
+      txNumber: 100
+      rateControl:
+        { type: "linear-rate", opts: { startingTps: 50, finishingTps: 200 } }
+      workload:
+        module: workload/createAsset.js
+        arguments:
+          contractId: basic
+    - label: readAsset
+      description: Read asset benchmark
+      txDuration: 50
+      rateControl: { type: "fixed-load", opts: { transactionLoad: 5 } }
+      workload:
+        module: workload/readAsset.js
+        arguments:
+          assets: 10
+          contractId: basic
+
+monitors:
+  resource:
+    - module: docker
+      options:
+        interval: 4
+        containers:
+          [
+            "peer0.org1.example.com",
+            "peer0.org2.example.com",
+            "peer0.org3.example.com",
+            "peer1.org1.example.com",
+            "peer1.org2.example.com",
+            "peer1.org3.example.com",
+            "orderer1.example.com",
+            "orderer2.example.com",
+            "orderer3.example.com"
+          ]
