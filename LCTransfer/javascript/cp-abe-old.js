@@ -188,7 +188,9 @@ async function  main(){
         console.log(policyString)
 
 
-            // input to the build a proposal request
+        //for(let i=0;i<100;i++){
+            let count = 0;
+                            // input to the build a proposal request
             let build_proposal_request = {
                 fcn:"CreateRecord", 
                 args: [dataString, policyString]
@@ -235,7 +237,10 @@ async function  main(){
                 let committedResults = await commit.send(commit_request); 
                 console.log("Committed results", committedResults)
                 
-                
+                if (count == 0){
+                    ++successful
+                }
+            //}
 
 
         // const XLSX = require('xlsx');

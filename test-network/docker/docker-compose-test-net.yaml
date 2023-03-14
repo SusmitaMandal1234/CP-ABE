@@ -135,7 +135,7 @@ services:
 
   peer0.org1.example.com:
     container_name: peer0.org1.example.com
-    image: hyperledger/fabric-peer:2.2.5
+    image: pranay0097/hyperledger-fabric-peer:latest
     environment:
       #Generic peer variables
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -177,8 +177,8 @@ services:
 
   peer1.org1.example.com:
     container_name: peer1.org1.example.com
-    ##image: hyperledger/fabric-peer:2.2.5
-    image: hyperledger/fabric-peer:2.2.5
+    ##image: pranay0097/hyperledger-fabric-peer:latest
+    image: pranay0097/hyperledger-fabric-peer:latest
     environment:
       #Generic peer variables
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -221,7 +221,7 @@ services:
 
   # peer2.org1.example.com:
   #   container_name: peer2.org1.example.com
-  #   image: hyperledger/fabric-peer:2.2.5
+  #   image: pranay0097/hyperledger-fabric-peer:latest
   #   environment:
   #     #Generic peer variables
   #     - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -263,7 +263,7 @@ services:
 
   # peer3.org1.example.com:
   #   container_name: peer3.org1.example.com
-  #   image: hyperledger/fabric-peer:2.2.5
+  #   image: pranay0097/hyperledger-fabric-peer:latest
   #   environment:
   #     #Generic peer variables
   #     - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -306,7 +306,7 @@ services:
   
   peer0.org2.example.com:
     container_name: peer0.org2.example.com
-    image: hyperledger/fabric-peer:2.2.5
+    image: pranay0097/hyperledger-fabric-peer:latest
     environment:
       #Generic peer variables
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -348,7 +348,7 @@ services:
   
   peer1.org2.example.com:
     container_name: peer1.org2.example.com
-    image: hyperledger/fabric-peer:2.2.5
+    image: pranay0097/hyperledger-fabric-peer:latest
     environment:
       #Generic peer variables
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -390,7 +390,7 @@ services:
 
   # peer2.org2.example.com:
   #   container_name: peer2.org2.example.com
-  #   image: hyperledger/fabric-peer:2.2.5
+  #   image: pranay0097/hyperledger-fabric-peer:latest
   #   environment:
   #     #Generic peer variables
   #     - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -431,7 +431,7 @@ services:
 
   # # peer3.org2.example.com:
   #   container_name: peer3.org2.example.com
-  #   image: hyperledger/fabric-peer:2.2.5
+  #   image: pranay0097/hyperledger-fabric-peer:latest
   #   environment:
   #     #Generic peer variables
   #     - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -474,7 +474,7 @@ services:
 
   peer0.org3.example.com:
     container_name: peer0.org3.example.com
-    image: hyperledger/fabric-peer:2.2.5
+    image: pranay0097/hyperledger-fabric-peer:latest
     environment:
       #Generic peer variables
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -513,7 +513,7 @@ services:
 
   peer1.org3.example.com:
     container_name: peer1.org3.example.com
-    image: hyperledger/fabric-peer:2.2.5
+    image: pranay0097/hyperledger-fabric-peer:latest
     environment:
       #Generic peer variables
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -552,7 +552,7 @@ services:
 
   # peer2.org3.example.com:
   #   container_name: peer2.org3.example.com
-  #   image: hyperledger/fabric-peer:2.2.5
+  #   image: pranay0097/hyperledger-fabric-peer:latest
   #   environment:
   #     #Generic peer variables
   #     - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -591,7 +591,7 @@ services:
     
   # peer3.org3.example.com:
   #   container_name: peer3.org3.example.com
-  #   image: hyperledger/fabric-peer:2.2.5
+  #   image: pranay0097/hyperledger-fabric-peer:latest
   #   environment:
   #     #Generic peer variables
   #     - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -630,7 +630,7 @@ services:
     
   # peer0.org4.example.com:
   #   container_name: peer0.org4.example.com
-  #   image: hyperledger/fabric-peer:2.2.5
+  #   image: pranay0097/hyperledger-fabric-peer:latest
   #   environment:
   #     #Generic peer variables
   #     - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -669,7 +669,7 @@ services:
 
   # peer1.org4.example.com:
   #   container_name: peer1.org4.example.com
-  #   image: hyperledger/fabric-peer:2.2.5
+  #   image: pranay0097/hyperledger-fabric-peer:latest
   #   environment:
   #     #Generic peer variables
   #     - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -708,7 +708,7 @@ services:
 
   # peer2.org4.example.com:
   #   container_name: peer2.org4.example.com
-  #   image: hyperledger/fabric-peer:2.2.5
+  #   image: pranay0097/hyperledger-fabric-peer:latest
   #   environment:
   #     #Generic peer variables
   #     - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
@@ -748,7 +748,7 @@ services:
 
   # peer3.org4.example.com:
   #   container_name: peer3.org4.example.com
-  #   image: hyperledger/fabric-peer:2.2.5
+  #   image: pranay0097/hyperledger-fabric-peer:latest
   #   environment:
   #     #Generic peer variables
   #     - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
